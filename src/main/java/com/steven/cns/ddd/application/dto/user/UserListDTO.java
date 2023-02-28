@@ -1,4 +1,4 @@
-package com.steven.cns.ddd.interfaces.dto.user;
+package com.steven.cns.ddd.application.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author dr.panda
+ * @author steven.cao
  */
 @Data
 @AllArgsConstructor

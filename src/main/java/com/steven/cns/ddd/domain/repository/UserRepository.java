@@ -1,8 +1,12 @@
 package com.steven.cns.ddd.domain.repository;
 
-/**
- * @author dr.panda
- */
-public interface UserRepository {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.steven.cns.ddd.domain.entity.User;
 
+/**
+ * @author steven.cao
+ */
+public interface UserRepository extends BaseMapper<User> {
+
+    User queryUserByUsername(String username);
 }

@@ -1,9 +1,9 @@
 package com.steven.cns.ddd.infrastructure.config;
 
 import com.google.common.base.Joiner;
+import com.steven.cns.ddd.infrastructure.base.exception.BizException;
 import com.steven.cns.infra.common.resp.Resp;
 import com.steven.cns.infra.common.type.RespResult;
-import com.steven.cns.ddd.infrastructure.base.exception.BizException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.validation.BindException;
@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author dr.panda
+ * @author steven.cao
  */
 @Slf4j
 @RestControllerAdvice

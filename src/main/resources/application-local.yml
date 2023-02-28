@@ -4,8 +4,10 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    open-in-view: false
+#    show-sql: true
   # 以下是h2-console的相关配置
   h2:
     console:
@@ -16,5 +18,5 @@ spring:
       path: /h2-console
   sql:
     init:
-      data-locations: classpath*:db/h2-data.sql
       schema-locations: classpath*:db/h2-schema.sql
+      data-locations: classpath*:db/h2-data.sql

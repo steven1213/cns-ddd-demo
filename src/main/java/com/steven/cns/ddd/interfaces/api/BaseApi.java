@@ -1,7 +1,7 @@
 package com.steven.cns.ddd.interfaces.api;
 
 /**
- * @author dr.panda
+ * @author steven.cao
  */
 public class BaseApi {
 

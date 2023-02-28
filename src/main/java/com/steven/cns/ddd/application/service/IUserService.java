@@ -1,18 +1,18 @@
 package com.steven.cns.ddd.application.service;
 
 
-import com.steven.cns.ddd.interfaces.dto.user.UserAddDTO;
-import com.steven.cns.ddd.interfaces.dto.user.UserEditDTO;
 import com.steven.cns.ddd.domain.vo.UserVO;
+import com.steven.cns.ddd.application.dto.user.UserAddDTO;
+import com.steven.cns.ddd.application.dto.user.UserEditDTO;
 
 /**
- * @author dr.panda
+ * @author steven.cao
  */
 public interface IUserService {
 
     UserVO getUserById(Long id);
 
-    void userAdd(UserAddDTO user);
+    void userAdd(UserAddDTO userAddDTO);
 
-    void userEdit(UserEditDTO user);
+    void userEdit(UserEditDTO userEditDTO);
 }
