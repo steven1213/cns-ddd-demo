@@ -26,13 +26,15 @@
         <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
         <mybatis-plus.version>3.5.0</mybatis-plus.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <cns-infra.version>0.0.1-SNAPSHOT</cns-infra.version>
+        <cns-log.version>0.0.1-SNAPSHOT</cns-log.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.2</version>
+            <version>${mybatis-plus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -43,7 +45,7 @@
         <dependency>
             <groupId>com.steven</groupId>
             <artifactId>cns-infra</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${cns-infra.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>mybatis-plus-annotation</artifactId>
@@ -54,7 +56,7 @@
         <dependency>
             <groupId>com.steven</groupId>
             <artifactId>cns-log</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${cns-log.version}</version>
         </dependency>
 
         <dependency>
@@ -62,11 +64,6 @@
             <artifactId>mybatis-plus-annotation</artifactId>
             <version>${mybatis-plus.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--            <version>${spring-boot-starter.version}</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -85,12 +82,12 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>${commons-lang3.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>31.1-jre</version>
+            <version>${guava.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

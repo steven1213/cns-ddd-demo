@@ -8,5 +8,4 @@ import com.steven.cns.ddd.domain.entity.User;
  */
 public interface UserRepository extends BaseMapper<User> {
 
-    User queryUserByUsername(String username);
 }

@@ -13,6 +13,7 @@ import org.springframework.web.bind.MissingRequestHeaderException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.servlet.ServletException;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -96,5 +97,14 @@ public class GlobalExceptionHandler {
     public Resp<Void> handleSQLException(SQLException ex) {
         log.error(ex.getMessage(), ex);
         return Resp.failure(RespResult.FAILURE.getCode(), "sql异常");
+    }
+
+    /**
+     * SQL 异常
+     */
+    @ExceptionHandler(value = ServletException.class)
+    public Resp<Void> handleSQLException(ServletException ex) {
+        log.error(ex.getMessage(), ex);
+        return Resp.failure(RespResult.FAILURE.getCode(), "服务异常");
     }
 }
